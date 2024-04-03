@@ -10,7 +10,7 @@ Update pubspec.yaml and add the following line to your dependencies.
 
 ```yaml
 dependencies:
-  khmer_chhankitek: ^0.0.1
+  khmer_chhankitek: ^0.0.3
 ```
 
 ## Import
