@@ -1,0 +1,20 @@
+name: khmer_chhankitek
+description: "Do you need Khmer calendar? You can do it with this package to help you!!!"
+version: 0.0.1
+homepage: https://github.com/SotheaHurn/khmer_chhankitek
+issue_tracker: https://github.com/SotheaHurn/khmer_chhankitek/issues
+
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
