@@ -58,7 +58,7 @@
 <h3 id="pubspecyaml">pubspec.yaml</h3>
 <p>Update pubspec.yaml and add the following line to your dependencies.</p>
 <pre class="language-yaml"><code class="language-yaml">dependencies:
-  khmer_chhankitek: ^0.0.3
+  khmer_chhankitek: ^0.0.4
 </code></pre>
 <h2 id="import">Import</h2>
 <p>Import the package with :</p>
@@ -67,22 +67,49 @@
 <h2 id="usage">Usage</h2>
 <p>The usage is very simple :</p>
 <h3 id="get-a-current-date">Get a Current Date</h3>
-<pre class="language-dart"><code class="language-dart">Chhankitek.now().toString();
+<pre class="language-dart"><code class="language-dart">Chhankitek.now();
 </code></pre>
 <h3 id="get-a-specific-date">Get a Specific Date</h3>
-<pre class="language-dart"><code class="language-dart">Chhankitek.get(DateTime(2024, 4, 12)).toString();
-Chhankitek.get(DateTime(2025, 2, 25)).toString();
+<pre class="language-dart"><code class="language-dart">Chhankitek.get(DateTime(2024, 5, 12));
+
+// use to string to khmer fomat
+Chhankitek.get(DateTime(2025, 2, 12)).toString();
 </code></pre>
 <h3 id="other-methods">Other Methods</h3>
-<pre class="language-dart"><code class="language-dart">Chhankitek.now().dayOfWeek;
-Chhankitek.now().lunarDay;
-Chhankitek.now().lunarMonth;
-Chhankitek.now().lunarZodiac;
-Chhankitek.now().lunarEra;
-Chhankitek.now().lunarYear;
-Chhankitek.now().solarDay;
-Chhankitek.now().solarMonth;
-Chhankitek.now().solarYear;
+<pre class="language-dart"><code class="language-dart">KhmerLunarDate khmerLunarDate = Chhankitek.now();
+
+/// អាទិត្យ , ច័ន្ទ , អង្គារ ...
+khmerLunarDate.dayOfWeek;
+
+/// ថ្ងៃតាមច័ន្ទគតិ
+khmerLunarDate.lunarDay;
+
+/// ថ្ងៃជាលេខខ្មែរ
+khmerLunarDate.lunarDay.moonCountKh;
+
+/// កើត , រោច
+khmerLunarDate.lunarDay.moonStatusKh;
+
+/// ខែតាមច័ន្ទគតិ : មិគសិរ , បុស្ស , មាឃ ...
+khmerLunarDate.lunarMonth;
+
+/// រាសីចក្រតាមច័ន្ទគតិ : ជូត , ឆ្លូវ , ខាល ...
+khmerLunarDate.lunarZodiac;
+
+/// សម័យតាមច័ន្ទគតិ : សំរឹទ្ធិស័ក , ឯកស័ក , ទោស័ក ...
+khmerLunarDate.lunarEra;
+
+/// ឆ្នាំតាមច័ន្ទគតិ
+khmerLunarDate.lunarYear;
+
+/// ថ្ងៃសកល
+khmerLunarDate.solarDay;
+
+/// ខែសកល
+khmerLunarDate.solarMonth;
+
+/// ឆ្នាំសកល
+khmerLunarDate.solarYear;
 </code></pre>
 </section>
 
@@ -94,7 +121,7 @@ Chhankitek.now().solarYear;
   <span class="name"><a href="khmer_chhankitek/khmer_chhankitek-library.html">khmer_chhankitek</a></span> 
 
 </dt>
-<dd>
+<dd>Flutter library to Khmer Lunar Date (ច័ន្ទគតិ)
 </dd>
 
         </dl>
@@ -131,7 +158,7 @@ Chhankitek.now().solarYear;
 <footer>
   <span class="no-break">
     khmer_chhankitek
-      0.0.2
+      0.0.4
   </span>
 
   

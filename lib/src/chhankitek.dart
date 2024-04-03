@@ -3,8 +3,6 @@ import 'package:khmer_chhankitek/khmer_chhankitek.dart';
 class Chhankitek {
   static late DateTime _newYearDateTime;
 
-  Chhankitek(DateTime dateTime);
-
   /// Current Date
   static KhmerLunarDate now() {
     return _toKhmerLunarDateFormat(DateTime.now());
@@ -388,7 +386,6 @@ class LunarDate {
   });
 }
 
-/// ថ្ងៃតាមច័ន្ទគតិ
 class LunarDay {
   /// ថ្ងៃជាលេខបារាំង
   final int moonCount;

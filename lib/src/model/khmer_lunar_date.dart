@@ -4,7 +4,7 @@ class KhmerLunarDate {
   /// អាទិត្យ , ច័ន្ទ , អង្គារ ...
   final String dayOfWeek;
 
-  /// ថ្ងៃតាមច័ន្ទគតិ :
+  /// ថ្ងៃតាមច័ន្ទគតិ
   final LunarDay lunarDay;
 
   /// ខែតាមច័ន្ទគតិ : មិគសិរ , បុស្ស , មាឃ ...

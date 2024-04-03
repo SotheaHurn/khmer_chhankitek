@@ -1,3 +1,4 @@
+/// Flutter library to Khmer Lunar Date (ច័ន្ទគតិ)
 library khmer_chhankitek;
 
 export 'src/chhankitek.dart';
